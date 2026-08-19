@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Visual ECoG dataset",
-  "description": "This dataset comprises intracranial EEG recordings from 14 epilepsy patients implanted with clinical surface and depth electrodes, collected during visual stimulation tasks between 2017-2020. Participants viewed grayscale patterns with varied spatial and temporal properties, as well as color images from six semantic categories, while performing a fixation task. The dataset includes raw voltage data, common-average-referenced recordings, broadband responses, preprocessed epochs, and surface reconstructions with electrode localizations, enabling investigation of neural dynamics in human visual cortex.",
-  "methods_description": "Intracranial EEG recordings were obtained from 14 epilepsy patients implanted with standard clinical surface (grid) and depth electrodes, with two patients additionally implanted with high-density research grids. Participants performed multiple visual tasks including population receptive field mapping with oriented bar stimuli, spatial and temporal pattern discrimination, and six-category image classification tasks. Pre-implantation T1 MRI scans were acquired for electrode localization. Data were collected across multiple sessions between 2017-2020, with common-average referencing and broadband filtering applied in derivatives.",
+  "description": "This dataset comprises intracranial EEG (ECoG) recordings from 14 epilepsy patients implanted with subdural grid and depth electrodes, collected while they viewed grayscale and color visual stimuli varying in spatial and temporal properties. The recordings were designed to characterize temporal and spatial dynamics of neural responses in human visual cortex, including population receptive field mapping and category-selective responses. Pre-implantation T1-weighted MRI scans are also included for electrode localization. The dataset supports multiple published studies on visual cortical dynamics and adaptation.",
+  "methods_description": "Participants were implanted with clinical surface (grid) and depth electrodes, with two patients additionally receiving a high-density research grid. Patients viewed grayscale pattern stimuli varying in spatial/temporal properties or color images of six stimulus categories while performing a fixation task with a color-change detection component. Pre-implantation T1 MRI scans were collected for electrode localization. Data were preprocessed into common-average-referenced voltage data and broadband power envelopes, with additional derivatives including epoched trials, freesurfer surface reconstructions, and model fits.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -96,36 +96,38 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D014793"
     },
     {
-      "term": "intracranial EEG"
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "population receptive fields"
+      "term": "population receptive field"
     },
     {
-      "term": "neural adaptation"
-    },
-    {
-      "term": "epilepsy patients"
+      "term": "intracranial recordings"
     },
     {
       "term": "visual perception"
+    },
+    {
+      "term": "temporal dynamics"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1523/JNEUROSCI.1812-21.2022",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "10.7554/eLife.90387.1",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "10.1101/2023.09.13.557378",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004194",
@@ -148,9 +150,8 @@
       "funder_name": "This work was supported in part through the NYU IT High Performance Computing resources, services, and staff expertise."
     },
     {
-      "funder_name": "NIH",
-      "award_number": "R01MH111417",
-      "award_title": "BRAIN Initiative, National Institute of Mental Health"
+      "funder_name": "National Institute of Mental Health",
+      "award_number": "R01MH111417"
     }
   ],
   "resource_type_general": "Dataset",

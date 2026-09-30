@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Visual ECoG dataset",
-  "description": "This dataset comprises intracranial EEG (ECoG) recordings from 14 epilepsy patients implanted with subdural grid and depth electrodes, collected while they viewed grayscale and color visual stimuli varying in spatial and temporal properties. The recordings were designed to characterize temporal and spatial dynamics of neural responses in human visual cortex, including population receptive field mapping and category-selective responses. Pre-implantation T1-weighted MRI scans are also included for electrode localization. The dataset supports multiple published studies on visual cortical dynamics and adaptation.",
-  "methods_description": "Participants were implanted with clinical surface (grid) and depth electrodes, with two patients additionally receiving a high-density research grid. Patients viewed grayscale pattern stimuli varying in spatial/temporal properties or color images of six stimulus categories while performing a fixation task with a color-change detection component. Pre-implantation T1 MRI scans were collected for electrode localization. Data were preprocessed into common-average-referenced voltage data and broadband power envelopes, with additional derivatives including epoched trials, freesurfer surface reconstructions, and model fits.",
+  "description": "Intracranial EEG (ECoG) recordings from 14 epilepsy patients implanted with clinical surface and depth electrodes, with two patients also carrying high-density research grids. Participants viewed grayscale pattern stimuli and color images of several categories. Stimuli varied in spatial and temporal properties, including pRF mapping bars, spatial and temporal patterns, and six-category localizers. Pre-implantation T1 MRI, FreeSurfer surface reconstructions and derivative broadband and preprocessed data are included.",
+  "methods_description": "Patients fixated a central cross or point and monitored it for a color change while viewing visual stimuli during clinical monitoring. Recordings used standard clinical grid and depth electrodes, plus high-density research grids in two patients. Derivatives include common-average-referenced data, broadband power envelopes, and epoched trials.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -86,48 +86,42 @@
   },
   "keywords": [
     {
-      "term": "Electrocorticography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+      "term": "Electrocorticography"
     },
     {
-      "term": "Visual Cortex",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D014793"
+      "term": "ECoG"
     },
     {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "term": "iEEG"
+    },
+    {
+      "term": "Visual Cortex"
     },
     {
       "term": "population receptive field"
     },
     {
-      "term": "intracranial recordings"
-    },
-    {
-      "term": "visual perception"
-    },
-    {
       "term": "temporal dynamics"
+    },
+    {
+      "term": "Epilepsy"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1523/JNEUROSCI.1812-21.2022",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "10.7554/eLife.90387.1",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "10.1101/2023.09.13.557378",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004194",
@@ -151,7 +145,8 @@
     },
     {
       "funder_name": "National Institute of Mental Health",
-      "award_number": "R01MH111417"
+      "award_number": "R01MH111417",
+      "award_title": "BRAIN Initiative"
     }
   ],
   "resource_type_general": "Dataset",
@@ -161,7 +156,7 @@
     "ieeg"
   ],
   "sizes": [
-    "61.9 GB (11645 files)"
+    "57.64 GB (11645 files)"
   ],
   "formats": [
     ".2mm/README",
